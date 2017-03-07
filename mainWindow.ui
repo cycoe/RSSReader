@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Awesome Rss Reader</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QListView" name="RSSList">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>280</width>
+      <height>570</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="RSSContains">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>40</y>
+      <width>520</width>
+      <height>530</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>5</y>
+      <width>380</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refreshBT_2">
+    <property name="geometry">
+     <rect>
+      <x>696</x>
+      <y>0</y>
+      <width>88</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="RSSBT">
+    <property name="title">
+     <string>&amp;RSS</string>
+    </property>
+    <addaction name="refreshBT"/>
+    <addaction name="aboutBT"/>
+    <addaction name="quitBT"/>
+   </widget>
+   <widget class="QMenu" name="settingBT">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="manageRssBT"/>
+   </widget>
+   <addaction name="RSSBT"/>
+   <addaction name="settingBT"/>
+  </widget>
+  <action name="refreshBT">
+   <property name="text">
+    <string>刷新&amp;RSS</string>
+   </property>
+  </action>
+  <action name="aboutBT">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="quitBT">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="manageRssBT">
+   <property name="text">
+    <string>管理&amp;RSS源</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>quitBT</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

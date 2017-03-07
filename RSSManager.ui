@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RSSManager</class>
+ <widget class="QDialog" name="RSSManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <widget class="QListWidget" name="subList">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>460</width>
+     <height>380</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addNewBT">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>48</y>
+     <width>90</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>新增</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="removeBT">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>136</y>
+     <width>90</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="applyBT">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>224</y>
+     <width>90</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>应用</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="qiutBT">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>312</y>
+     <width>90</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>qiutBT</sender>
+   <signal>clicked()</signal>
+   <receiver>RSSManager</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>544</x>
+     <y>328</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>531</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
